@@ -1,0 +1,754 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+h1{ font-size: 3.0em;}
+h2{ font-size: 2.2em;}
+h3{ font-size: 2em;} 
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.20em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px ;
+    border-radius: 5px;
+    border: 2px solid red;
+    box-shadow: 2px 2px 10px firebrick ;
+    color: white;
+    background-color: firebrick;
+}
+
+button:hover{
+    background-color: rgb(241, 40, 40);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: firebrick;
+
+}
+
+header{
+    background-color: rgb(235,235,235);
+}
+
+header .logo{
+    margin: 0;
+    padding: 15px 15px;
+    font-weight: bold;
+    color: firebrick;
+    font-size: 2em;
+}
+
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    margin: 1px;
+    padding: 4px;
+    border: 2px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+header a:hover{
+    color: firebrick;
+}
+
+#hero{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 85vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/banner5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(255, 255, 255);
+}
+
+#Conozcamos{  color: rgba(0,0,0,1);  
+}
+
+#Conozcamos .container{
+    text-align: center;
+    padding: 120px 12px;
+
+}
+
+.mapa{
+    margin: 15px;
+    padding: 15px;
+}
+
+iframe{
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: firebrick;
+    color: black;
+    padding: 3px;
+    border-radius: 15px;
+    font-family: 'Abel', sans-serif;
+}
+
+#formulario{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: firebrick;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+    font-family: 'Abel', sans-serif;
+}
+
+#formulario h3{
+    font-size: larger;
+}
+.control {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid black 2px;
+    background-color: rgb(211, 165, 163);
+}
+
+#my-form-button{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+#nuestros-equipos h2{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+#nuestros-equipos{
+    display: grid;
+    padding-top: 25px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-equipos .container{
+    padding: 10px 12px;
+
+}
+#nuestros-equipos h3{
+    margin: 10px;
+}
+
+#nuestros-equipos .equipos{
+    background-position: top;
+    background-size: cover;
+    padding: 235px 15px 15px 15px;
+    margin: 15px;
+    border-radius: 50px;
+}
+
+#nuestros-equipos p{
+    margin: 5px;
+}
+
+
+.equipos:nth-child(1){
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url(/Imagenes/Entrenador-Jhonny.png);   
+}
+
+.equipos:nth-child(2){
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    background-position-y: 0;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url(/Imagenes/Entrenador-FacuyCyn.png);
+}
+ #reglas-equipo .container{
+    text-align: center justify;
+    padding: 40px 52px;
+
+ }
+
+ #reglas-equipo li{
+    margin: 16px 0px;
+    font-weight: bold;
+    
+ }
+
+ #final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 90vh;
+ }
+
+ #final h2{
+    font-size: 9vw;
+ }
+
+ #final button{
+    font-size: 5vw;
+ }
+
+ footer{
+    background-color: firebrick;
+ }
+
+ footer p{
+    margin: 0;
+    text-align: right;
+    padding: 10px;
+ }
+
+ footer .container{
+    height: 50px;
+ }
+
+ /* TEAM JHONNY */
+ #hero-jhonny{padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 85vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Ciudad\ Jhonny\ banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero-jhonny h1{
+    color: rgb(255, 255, 255);
+}
+
+#conozcamos-jhonny{
+    color: rgba(0,0,0,1);  
+}
+
+#Conozcamos-jhonny .container{
+    text-align: center;
+    padding: 120px 12px;
+
+}
+
+#Conozcamos .container{
+    text-align: center;
+    padding: 120px 12px;;
+
+}
+
+#equipo-jhonny .pokemon1{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Dragonair.png);
+}
+
+#equipo-jhonny .pokemon2{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Blastoise.png);
+}
+
+#equipo-jhonny .pokemon3{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Alcremie.png);
+}
+
+#equipo-jhonny .pokemon4{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Heracross.png);
+}
+
+#equipo-jhonny .pokemon5{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Kommo-o.png);
+}
+
+#equipo-jhonny .pokemon6{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Beartic.png);
+}
+
+section{
+    display: block;
+}
+
+#equipo-jhonny .container{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    padding: 5px;
+    width: 95%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+
+#equipo-jhonny{padding-top: 15px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#equipo-jhonny h2{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid firebrick;
+
+}
+
+/* Facu y Cyn*/
+
+#hero-facu{padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 85vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1)
+    )
+    ,url(/Imagenes/CiudadPistón.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero-facu h1{
+    color: white;
+}
+#conozcamos-facu{
+    color: rgba(0,0,0,1);  
+}
+
+#Conozcamos-facu .container{
+    text-align: center;
+    padding: 120px 12px;
+
+}
+
+#Conozcamos .container{
+    text-align: center;
+    padding: 120px 12px;;
+
+}
+#equipo-facu .pokemon1{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Milotic.png);
+}
+
+#equipo-facu .pokemon2{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Regirock.png);
+}
+
+#equipo-facu .pokemon3{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Happiny.png);
+}
+
+#equipo-facu .pokemon4{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Morelull.png);
+}
+
+#equipo-facu .pokemon5{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Dracovish.png);
+}
+
+#equipo-facu .pokemon6{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 5px;
+    padding: 150px 15px 15px 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Gigalith.png);
+}
+
+section{
+    display: block;
+}
+
+#equipo-facu .container{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    padding: 5px;
+    width: 95%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+
+#equipo-facu{
+    padding-top: 15px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#equipo-facu h2{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid firebrick;
+
+}
+
+
+
+
+ @media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 4em;
+    }
+
+    #Conozcamos .container{
+        justify-content:flex-start;
+        display:flex;
+        flex-direction: column-reverse;
+    }
+
+    #Conozcamos .img-container1{
+        margin: 5px;
+        padding: 5px;
+        background-position: center;
+        width: 80%;
+        height: 300px;
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Cámara_exterior.png);
+    }
+    
+    #Conozcamos .img-container2{
+        background-color: black;
+        padding: 5px;
+        margin: 5px;
+        background-position: center;
+        width: 80%;
+        height: 300px;
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(/Imagenes/Ciudad_Pistón_de_noche.png);
+
+    }
+
+    #Conozcamos .texto{
+        text-align: center;
+        
+    }
+
+    #Conozcamos h2{
+        margin-top: 0px;
+    }
+
+    #Conozcamos .img-container{
+        margin: 0px;
+        justify-content: center;
+        background-image: url("/Imagenes/Poketrainers-min.webp");
+        background-size: cover;
+        height: 300px;
+        width: 80%; 
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/front-end-cropped.jpg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/full-stack-cropped.jpg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/python-cropped.jpg");
+
+    }
+
+    #caracteristicas{
+        background-image: url("media/background-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 450px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+
+    section{
+        margin: 0;
+    }
+
+    #nuestros-equipos{
+        background-color: black;
+        margin: 0px;
+    }
+}
